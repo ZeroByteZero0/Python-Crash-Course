@@ -94,7 +94,15 @@ cars.reverse()
 print(cars)
 
 #FINDING THE LENGTH OF A LIST
-#   #(len) function returns the length of a list, starts at 1, so there are no off-by-one errors
+#   *(len) function returns the length of a list, starts at 1, so there are no off-by-one errors
 print(len(cars))
 
 #AVOIDING INDEXING ERRORS WHEN WORKING WITH LISTS
+#   *lists have indexes, indexing begins at (0)
+#   *[-1] will always return last item in a list unless the list is empty []
+#   *print(cars[8]) would return an error
+#   *print(cars[-1]) would return last item in a list
+#   *if an indexing error occurs, print list to see current status of the contents
+#   *sometimes adjusting the index by one results in solving the error
+#   *lists are dynamically handled by different functions and methods
+#   *checking the status of the list helps to sort out any logical errors
