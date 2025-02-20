@@ -71,3 +71,30 @@ print(list_6)
 
 #   *can also use remove method to loop through a list to take out every instance of a value
 #   *can also save the value being removed to a variable
+
+#ORGANIZING A LIST
+#   *Python includes methods that allow lists to be sorted
+#   *(sort) method returns a list as alphabetically organized and changes order of list forever
+#   *(reverse=True) parameter in (sort) method returns reverse alphabetical ordered list
+cars = ['audi','bmw','subaru','toyota', 'ford','suzuki','alpha-romeo','saab','mini-cooper']
+cars.sort()
+print(cars)
+
+#   *(sorted) method allows you to sort a list temporarily without permanently modifying the list
+#   *(reverse=True) parameter also works for (sorted) method returns reverse-alphabetical list
+#   *important to note that capital letters are sorted differently than lowercase letters
+cars = ['bmw','tesla','ford','gmc','chevy','dodge','Porsche','Bugatti']
+print(sorted(cars))
+print(cars)
+
+
+#PRINTING A LIST IN REVERSE ORDER
+#   *(reverse) method doesn't sort alphabetically but permanently reverses a lists order
+cars.reverse()
+print(cars)
+
+#FINDING THE LENGTH OF A LIST
+#   #(len) function returns the length of a list, starts at 1, so there are no off-by-one errors
+print(len(cars))
+
+#AVOIDING INDEXING ERRORS WHEN WORKING WITH LISTS
